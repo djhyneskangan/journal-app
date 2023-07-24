@@ -1,5 +1,6 @@
 <script>
-let showModal = true;
+export let message;
+export let showModal = false;
 
 </script>
 
@@ -7,10 +8,12 @@ let showModal = true;
 {#if showModal}
 <div class="backdrop">
     <div class="modal">
-<p>How siy.</p>
+<p>{message}</p>
     </div>
 </div>
 {/if}
+
+
 
 <style>
     .backdrop {

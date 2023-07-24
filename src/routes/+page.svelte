@@ -1,9 +1,12 @@
 <script>
     import Modal from './modal.svelte';
+    let showModal = false;
 
     const toggleModal = () => {
-        showModal = !showModal;
-    }
+    showModal = !showModal;
+    } 
     </script>
 
-    <Modal />
+    <Modal message="Jatz Crackers" {showModal} />
+
+    <button on:click={toggleModal}>Open Model</button>
